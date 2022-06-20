@@ -8,14 +8,19 @@ public class power {
 
         int[] power = new int[n];
 
-        for (int i = 0; i < power.length; i++) {
-            power[i] = (int) Math.pow(2, i);
-        }
-        for (int i = 0; i < power.length; i++) {
-            System.out.println(power[i]);
-        }
+        if (n < 1 || n > 20) {
+            System.out.println("Number not between 1 & 20! Please try again!");
+        } else {
+
+            for (int i = 0; i < power.length; i++) {
+                power[i] = (int) Math.pow(2, i);
+            }
+            for (int i = 0; i < power.length; i++) {
+                System.out.println(power[i]);
+            }
 
 
+        }
     }
 }
 
